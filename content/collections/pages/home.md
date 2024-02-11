@@ -1,8 +1,18 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: home
+author: 2e9272b3-569e-46f7-8472-ab96b1302f1a
+must_be_true: false
+updated_by: 2e9272b3-569e-46f7-8472-ab96b1302f1a
+updated_at: 1707682205
+replicator_field:
+  -
+    id: lshvepd4
+    rep_must_be_true: false
+    type: new_set
+    enabled: true
 ---
 ## Welcome to your brand new Statamic site!
 

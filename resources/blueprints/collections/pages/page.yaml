@@ -1,0 +1,57 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Custom Field w/ Replicator'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+          -
+            handle: field_with_replicator_field
+            field:
+              preset_fund_allocations:
+                -
+                  id: lshvxxi0
+                  custom_rep_must_be_true: true
+                  type: computed_allocation
+                  enabled: true
+              type: field_with_replicator
+              display: 'Field With Replicator Field'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              required_text_field: rer
+              replicator_field:
+                -
+                  id: lshwppgf
+                  custom_rep_must_be_true: true
+                  type: entry
+                  enabled: true
+                  text_field_1: asd
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
